@@ -12,6 +12,8 @@
 		BD9CF0BC2A3C0B6600CC4573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9CF0BB2A3C0B6600CC4573 /* Assets.xcassets */; };
 		BD9CF0BF2A3C0B6600CC4573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9CF0BD2A3C0B6600CC4573 /* LaunchScreen.storyboard */; };
 		BD9CF0CB2A3C182B00CC4573 /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0CA2A3C182B00CC4573 /* MoveViewController.swift */; };
+		BD9CF0CE2A3C327300CC4573 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0CD2A3C327300CC4573 /* ScaleViewController.swift */; };
+		BD9CF0D12A3C3CA600CC4573 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0D02A3C3CA600CC4573 /* RotateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BD9CF0BE2A3C0B6600CC4573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD9CF0C02A3C0B6600CC4573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD9CF0CA2A3C182B00CC4573 /* MoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
+		BD9CF0CD2A3C327300CC4573 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		BD9CF0D02A3C3CA600CC4573 /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				BD9CF0B22A3C0B6400CC4573 /* AppDelegate.swift */,
 				BD9CF0C82A3C17FA00CC4573 /* Home */,
 				BD9CF0C92A3C180900CC4573 /* Move */,
+				BD9CF0CC2A3C326100CC4573 /* Scaling */,
+				BD9CF0CF2A3C3C8D00CC4573 /* Rotate */,
 				BD9CF0C72A3C0BDF00CC4573 /* Files */,
 			);
 			path = CoreAnimationFun;
@@ -86,6 +92,22 @@
 				BD9CF0CA2A3C182B00CC4573 /* MoveViewController.swift */,
 			);
 			name = Move;
+			sourceTree = "<group>";
+		};
+		BD9CF0CC2A3C326100CC4573 /* Scaling */ = {
+			isa = PBXGroup;
+			children = (
+				BD9CF0CD2A3C327300CC4573 /* ScaleViewController.swift */,
+			);
+			name = Scaling;
+			sourceTree = "<group>";
+		};
+		BD9CF0CF2A3C3C8D00CC4573 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				BD9CF0D02A3C3CA600CC4573 /* RotateViewController.swift */,
+			);
+			name = Rotate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +183,8 @@
 				BD9CF0B72A3C0B6400CC4573 /* HomeViewController.swift in Sources */,
 				BD9CF0B32A3C0B6400CC4573 /* AppDelegate.swift in Sources */,
 				BD9CF0CB2A3C182B00CC4573 /* MoveViewController.swift in Sources */,
+				BD9CF0CE2A3C327300CC4573 /* ScaleViewController.swift in Sources */,
+				BD9CF0D12A3C3CA600CC4573 /* RotateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

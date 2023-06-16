@@ -1,5 +1,5 @@
 //
-//  MoveViewController.swift
+//  RotateViewController.swift
 //  CoreAnimationFun
 //
 //  Created by Eman Shedeed on 16/06/2023.
@@ -7,25 +7,25 @@
 
 import UIKit
 
-class MoveViewController: UIViewController {
-    
+class RotateViewController: UIViewController {
     //MARK: Properties
-    private let redView = UIView()
+    let redView = UIView()
     private let animateButton = UIButton(type: .system)
     private let viewHeight = 100.0
     private let viewWidth = 140.0
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
         style()
         layout()
     }
-    
-    
+
+
 }
 //MARK: Private Methods
-private extension MoveViewController{
+private extension RotateViewController{
     func style(){
         redView.backgroundColor = .systemRed
         animateButton.setTitle("Animate", for: [])
@@ -41,8 +41,8 @@ private extension MoveViewController{
         
         //redView
         NSLayoutConstraint.activate([
-            redView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            redView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            redView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             redView.widthAnchor.constraint(equalToConstant: viewWidth),
             redView.heightAnchor.constraint(equalToConstant: viewHeight)
         ])
@@ -56,21 +56,23 @@ private extension MoveViewController{
     }
     func animate(){
         let animation = CABasicAnimation()
-        animation.keyPath = "position.x"
-        animation.fromValue = 20 + viewWidth/2
-        animation.toValue = UIScreen.main.bounds.width - (viewWidth/2 + 10)
+        animation.keyPath = "transform.rotation.z"
+        animation.fromValue = 0
+        print(CGFloat.pi)
+        animation.toValue = CGFloat.pi/4 // 45 degree
         animation.duration = 1
         
-        redView.layer.add(animation, forKey: "Move")
-//        redView.layer.position = CGPoint(x:  (UIScreen.main.bounds.width - (viewWidth/2 + 10)), y: 20 + viewHeight/2)
+        redView.layer.add(animation, forKey: "rotate")
+        redView.layer.transform = CATransform3DMakeRotation(CGFloat.pi/4, 0, 0, 1)
         
     }
     
 }
 
 //MARK: Actions
-private extension MoveViewController{
+private extension RotateViewController{
     @objc func didTapAnimateButton() {
         animate()
     }
 }
+
