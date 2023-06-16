@@ -15,6 +15,7 @@
 		BD9CF0CE2A3C327300CC4573 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0CD2A3C327300CC4573 /* ScaleViewController.swift */; };
 		BD9CF0D12A3C3CA600CC4573 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0D02A3C3CA600CC4573 /* RotateViewController.swift */; };
 		BD9CF0D42A3C3F5A00CC4573 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0D32A3C3F5A00CC4573 /* ShakeViewController.swift */; };
+		BD9CF0D72A3C43FD00CC4573 /* CirclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9CF0D62A3C43FD00CC4573 /* CirclingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BD9CF0CD2A3C327300CC4573 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		BD9CF0D02A3C3CA600CC4573 /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 		BD9CF0D32A3C3F5A00CC4573 /* ShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
+		BD9CF0D62A3C43FD00CC4573 /* CirclingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BD9CF0CC2A3C326100CC4573 /* Scaling */,
 				BD9CF0CF2A3C3C8D00CC4573 /* Rotate */,
 				BD9CF0D22A3C3F4300CC4573 /* Shake */,
+				BD9CF0D52A3C43F100CC4573 /* Circling */,
 				BD9CF0C72A3C0BDF00CC4573 /* Files */,
 			);
 			path = CoreAnimationFun;
@@ -119,6 +122,14 @@
 				BD9CF0D32A3C3F5A00CC4573 /* ShakeViewController.swift */,
 			);
 			name = Shake;
+			sourceTree = "<group>";
+		};
+		BD9CF0D52A3C43F100CC4573 /* Circling */ = {
+			isa = PBXGroup;
+			children = (
+				BD9CF0D62A3C43FD00CC4573 /* CirclingViewController.swift */,
+			);
+			name = Circling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9CF0B72A3C0B6400CC4573 /* HomeViewController.swift in Sources */,
+				BD9CF0D72A3C43FD00CC4573 /* CirclingViewController.swift in Sources */,
 				BD9CF0D42A3C3F5A00CC4573 /* ShakeViewController.swift in Sources */,
 				BD9CF0B32A3C0B6400CC4573 /* AppDelegate.swift in Sources */,
 				BD9CF0CB2A3C182B00CC4573 /* MoveViewController.swift in Sources */,

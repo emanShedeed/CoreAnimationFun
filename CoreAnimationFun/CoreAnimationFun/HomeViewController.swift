@@ -11,8 +11,14 @@ class HomeViewController: UIViewController {
     //MARK: Properities
 
     let animationTableView = UITableView()
-   // let animationTypes = ["Move", "Scale", "Rotate", "Shake", "Circling"]
-    let tableItems: [(name:String,viewController:UIViewController)] = [(name: "Move", viewController: MoveViewController()), (name: "Scaling", viewController: ScaleViewController()), (name: "Rotation", viewController: RotateViewController()), (name: "Shake", viewController: ShakeViewController())]
+
+    let tableItems: [(name:String,viewController:UIViewController)] = [
+        (name: "Move", viewController: MoveViewController()),
+        (name: "Scaling", viewController: ScaleViewController()),
+        (name: "Rotation", viewController: RotateViewController()),
+        (name: "Shake", viewController: ShakeViewController()),
+        (name: "Circling", viewController: CirclingViewController())
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
