@@ -25,6 +25,7 @@ class ScaleViewController: UIViewController {
 
 
 }
+
 //MARK: Private Methods
 private extension ScaleViewController{
     func style(){

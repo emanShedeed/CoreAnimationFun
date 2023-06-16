@@ -24,6 +24,7 @@ class MoveViewController: UIViewController {
     
     
 }
+
 //MARK: Private Methods
 private extension MoveViewController{
     func style(){

@@ -24,6 +24,7 @@ class RotateViewController: UIViewController {
 
 
 }
+
 //MARK: Private Methods
 private extension RotateViewController{
     func style(){
